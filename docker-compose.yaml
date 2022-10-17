@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  TransformersAPI:
+    container_name: TransformersAPIRestfull
+    image: gestioninno/transformers-api
+    # restart: always
+      # environment:
+      #   ACCEPT_EULA: Y
+      #   SA_PASSWORD: Strongpassword!
+      #   MSSQL_PID: Developer
+    ports:
+      - "80:80"
+    volumes:
+     - ~/Documents/ProyectoGestionProyectos/app/:/var/app
